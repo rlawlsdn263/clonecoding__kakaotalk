@@ -1,0 +1,106 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap");
+
+/* Global */
+:root {
+  /* Colors */
+  --color-white: #ffffff;
+  --color-gray: #808080;
+  --color-gray-light: #d3d3d3;
+  --color-yellow: #fae301;
+
+  /* Font-Size */
+  --font-small: 12px;
+  --font-regular: 16px;
+  --font-large: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Navigation Bar */
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 5px;
+  background-color: var(--color-white);
+
+  font-size: var(--font-small);
+}
+
+#logIn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logIn__title {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.logIn__title h1 {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.logIn__title p {
+  color: var(--color-gray);
+  font-size: var(--font-regular);
+}
+
+.logIn__idAndPassword {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 50px;
+}
+
+.logIn__id,
+.logIn__password {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 20px;
+
+  border: none;
+  border-bottom: 1px solid var(--color-gray-light);
+
+  outline: none;
+}
+
+.logIn__id::placeholder,
+.logIn__password::placeholder {
+  color: var(--color-gray);
+}
+
+.logIn__btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.logInBtn,
+.signUpBtn {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 15px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: var(--color-yellow);
+}
+
+.logIn__find {
+  font-size: var(--font-small);
+}
+
+.logIn__find p a {
+  color: blue;
+}
